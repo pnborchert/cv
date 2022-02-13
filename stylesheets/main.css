@@ -1,0 +1,158 @@
+body {
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+    overflow-x: hidden;
+}
+
+.top{
+    padding-top: 3rem;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+.card-img {
+    border-radius: 50%;
+    max-width: 150px;
+    margin-right: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.bg-nav{
+    background-color: white;
+}
+
+.nav-link {
+    color: rgb(92, 92, 92) !important;
+    display: inline-block;
+    position: relative;
+    margin-right: 0.75rem;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    color: rgb(0, 0, 0) !important;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .nav-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+.card{
+    max-width: 800px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-left{
+    background-color: rgb(2, 117, 216);
+   height: 100%;
+   overflow: hidden;
+   padding-top: 1.5rem;
+}
+
+.card-body{
+    /* background-color: #ddd ; */
+   height: 100%;
+   overflow: hidden;
+   color: black;
+}
+
+.link-box{
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+    color: white;
+}
+
+.link-box > div > p > a{
+    color: #ddd;
+    text-decoration: none;
+}
+
+.link-box > div > p > a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.link-box > div > i,p{
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+    padding-right: 20px;
+}
+
+.lang-box > div > p{
+    margin-bottom: 0.75rem;
+}
+
+section{
+    max-width: 800px;
+}
+
+/* colored title */
+section > h1{
+    color:rgb(99, 158, 247);
+    margin-top: 5rem;
+}
+
+/* header */
+section > div > h2{
+    font-weight: 200;
+    font-size: 30px;
+}
+
+/* sub-header */
+section > h3 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+section > div {
+    margin-bottom: -5px;
+    padding-top: 10px;
+}
+
+/* muted color */
+section > div > h6{
+    color: rgba(107, 107, 107, 0.733);
+    font-weight: 400;
+}
+
+pill{
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 16px;
+}
+
+/* Phone adjustments */
+@media only screen and (max-width: 767px) {
+    .card{
+        background-color: rgb(2, 117, 216);
+    }
+
+    .card-body{
+        background-color: white;
+    }
+  }
