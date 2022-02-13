@@ -98,7 +98,7 @@ body {
 }
 
 .lang-box > div > p{
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.6rem;
 }
 
 section{
@@ -144,6 +144,11 @@ pill{
     display: inline-block;
     margin: 4px 2px;
     border-radius: 16px;
+}
+
+.btn > .bi {
+    margin-bottom: 5px !important;
+    margin-right: 5px;
 }
 
 /* Phone adjustments */
